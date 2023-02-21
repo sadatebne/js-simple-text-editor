@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font-awesome -->
+
+    <script src="https://kit.fontawesome.com/bac1394184.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section class="bg-sky-300 mx-auto w-3/4 mt-8 ">
+
+        <h1 class="text-center font-semibold text-xl">My Text Editor</h1>
+
+        <div class="border-2 border-black mt-5">
+
+            <div class="flex justify-between border-b-2 border-black">
+                <div class="px-4">
+                    <button id="btn-bold" class="pr-2"><i class="fa-solid fa-bold"></i></button>
+                    <button id="btn-italic" class="pr-2"><i class="fa-solid fa-italic"></i></button>
+                    <button id="btn-underline" ><i class="fa-solid fa-underline"></i></button>
+                </div>
+
+                <div>
+                    <button id="btn-ali-left" class="pr-4"><i class="fa-solid fa-align-left"></i></button>
+                    <button id="btn-ali-center" class="pr-4"><i class="fa-solid fa-align-center"></i></button>
+                    <button id="btn-ali-right" class="pr-4"><i class="fa-solid fa-align-right"></i></button>
+                    <button id="btn-ali-initial"><i class="fa-solid fa-align-justify"></i></button>
+                </div>
+
+              
+                <div>
+                    <input id="value-change" class="mb-2" type="number" id="quantity" name="quantity" value="14" min="1" max="75">
+                    
+                    <button id="btn-upCase" class="font-semibold mx-3">Aa</button>
+
+                    <input id="text-color" class="rounded-full px-2" type="color" id="head">
+
+                </div>
+
+            </div>
+
+            <div class="mt-5 p-8">
+                <textarea id="text"  placeholder="Bio" class="textarea  mb-5 resize-y w-full h-96" ></textarea>
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- script -->
+<script src="js/edit.js"></script>
+</body>
+
+</html>
