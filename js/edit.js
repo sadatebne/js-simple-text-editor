@@ -11,20 +11,45 @@ function textInfoValue(){
 
 document.getElementById('btn-bold').addEventListener('click',function(){
 
-textInfo().style.fontWeight = "bold";
+   const elementFontWeight=textInfo().style.fontWeight;
+
+   if(elementFontWeight==='bold'){
+      textInfo().style.fontWeight='normal'
+   } 
+   else{
+      textInfo().style.fontWeight='bold';
+   }
 
 })
 
 
 document.getElementById('btn-italic').addEventListener('click',function(){ 
-    textInfo().style.fontStyle = "italic";
+    
+    const elementFontStyle=textInfo().style.fontStyle;
+   
+    if(elementFontStyle==='italic'){
+       textInfo().style.fontStyle='normal'
+    } 
+    else{
+      textInfo().style.fontStyle = "italic";
+    }
     
  })
 
 document.getElementById('btn-underline').addEventListener('click',function(){ 
-    textInfo().style.textDecoration = "underline overline";
-    ;
+    
+    const elementFontUnderLine=textInfo().style.textDecoration;
+   
+    if(elementFontUnderLine ==='underline'){
+      
+      textInfo().style.textDecoration = "none"
+    } 
+    else{
+      textInfo().style.textDecoration = "underline";
+    }
+
  })
+
 
  document.getElementById('btn-ali-left').addEventListener('click',function(){ 
     textInfo().style.textAlign = "left";
@@ -47,7 +72,20 @@ document.getElementById('btn-ali-center').addEventListener('click',function(){
 //  
 
 document.getElementById('btn-upCase').addEventListener('click',function(){ 
-    textInfo().style.textTransform = "capitalize";
+
+
+    const elementFontCapital=textInfo().style.textTransform;
+   
+    if(elementFontCapital==='capitalize'){
+      textInfo().style.textTransform = "none";
+
+    } 
+    else{
+      textInfo().style.textTransform = "capitalize";
+
+    }
+
+
  })
 
 window.addEventListener('click',function(){ 
